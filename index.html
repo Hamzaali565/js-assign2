@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add your number here </h1>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="add()">ADD</button>
+<h2 id="h2"></h2>
+<script>
+function add(){
+let inputNum1 = document.querySelector('#num1').value;
+let inputNum2 = document.querySelector('#num2').value;
+
+console.log("inputNum1", inputNum1)
+console.log("inputNum2", inputNum2)
+
+let result = Number(inputNum1) + Number(inputNum2);
+console.log("result", result);
+
+let sumresultelement = document.querySelector('#h2');
+sumresultelement.innerHTML = result;
+}
+</script>
+
+<h1>Subtract here</h1>
+<input type="number" id="subNum1">
+<input type="number" id="subNum2">
+<button onclick="sub()">Sub</button>
+<h2 id="subNum"></h2>
+<script>
+function sub() {
+let subNum1 = document.querySelector('#subNum1').value;
+let subNum2 = document.querySelector('#subNum2').value;
+console.log("subNum1", subNum1)
+console.log("subNum2", subNum2)
+
+let ans = Number(subNum1) - Number(subNum2);
+console.log('ans', ans);
+
+let finalNum = document.querySelector('#subNum');
+finalNum.innerHTML = ans;
+}
+</script>
+
+<h1>Multiply here</h1>
+<input type="number" name="" id="mulNum1">
+<input type="number" name="" id="mulNum2">
+<button onclick="mul()">Multiply</button>
+<h2 id="mulNum3"></h2>
+<script>
+function mul(){
+let mulNum1 = document.querySelector('#mulNum1').value;
+let mulNum2 = document.querySelector('#mulNum2').value;
+console.log('mulNum1', mulNum1)
+console.log('mulNum2', mulNum2)
+
+let output = Number(mulNum1) * Number(mulNum2);
+console.log('output', output)
+
+let finale = document.querySelector('#mulNum3');
+finale.innerHTML = output;
+}</script>
+
+<h1>Divide Here</h1>
+<input type="number" name="" id="divNum1">
+<input type="number" name="" id="divNum2">
+<button onclick="div()">Divide</button>
+<h2 id="divNum3"></h2>
+ <script>
+     function div(){
+let divNum1 = document.querySelector('#divNum1').value;
+let divNum2 = document.querySelector('#divNum2').value;
+console.log('divNum1', divNum1)
+console.log('divNum2', divNum2)
+
+let show = Number(divNum1) / Number(divNum2);
+console.log('show', show)
+
+let divNum3 = document.querySelector('#divNum3'); 
+divNum3.innerHTML = show;}
+ </script>   
+
+<h1>Modulus Here</h1>
+<input type="number" name="" id="modNum1">
+<input type="number" id="modNum2">
+<button onclick="mod()">Modulus</button>
+<h2 id='modNum3'></h2>
+<script>
+function mod(){
+let modNum1 = document.querySelector('#modNum1').value;
+let modNum2 = document.querySelector('#modNum2').value;
+console.log('modNum1', modNum1)
+console.log('modNum2', modNum2)
+
+let display = Number(modNum1) % Number(modNum2);
+console.log('display', display)
+
+let modNum3 = document.querySelector('#modNum3');
+modNum3.innerHTML = display;
+}
+</script>
+
+<h2 id="dec3"></h2>
+
+
+<script>
+let dec1 = 'value after variable declaration is 1';
+console.log('dec1', dec1)
+
+let dec2 = dec1;
+console.log('dec2', dec2)
+
+let dec4 = document.querySelector('#dec3');
+dec4.innerHTML = dec2;
+</script>
+<script>
+    let sun = 5;
+</script>
+<h2 id="intVal3"></h2>
+<script>
+let intVal1 = 'Initial value:5';
+console.log('intVal1', intVal1)
+
+let intVal2 = intVal1;
+console.log('intVal2', intVal2)
+
+let intVal3 = document.querySelector('#intVal3');
+intVal3.innerHTML = intVal2;
+</script>
+<script>
+    let incre = 6;
+</script>
+<h2 id="incre3"></h2>
+<h2 id="inco5"></h2>
+<h2 id="decre4"></h2>
+<h2 id="remain4"></h2>
+<script>
+let incre1 = 'Value after increment is 6';
+console.log('incre1', incre1)
+
+let incre2 = incre1;
+console.log('incre2', incre2)
+
+let incre3 = document.querySelector('#incre3');
+incre3.innerHTML = incre2;
+
+let inco1 = incre + 7;
+console.log('inco1', inco1)
+
+let inco2 = 'Value after addition is 13';
+console.log('inco2', inco2)
+
+let inco3 = inco2;
+console.log('inco3', inco3)
+
+let inco4 = document.querySelector('#inco5');
+inco4.innerHTML = inco3;
+ 
+let decre1 = inco1 -1;
+console.log('decre1', decre1)
+
+let decre2 = 'Value after decrement is 12';
+console.log('decre2', decre2)
+
+let decre3 = document.querySelector('#decre4');
+decre3.innerHTML = decre2;
+
+let remain1 = decre1 % 3;
+console.log('remain1', remain1)
+  
+let remain2 = 'the remainder is 0';
+console.log('remain2', remain2)
+
+let remain3 = document.querySelector('#remain4');
+remain3.innerHTML = remain2;
+ </script>
+<h1>cinema</h1>
+<p>ticket price is 600</p>
+<p>Amount of tickets <input type="number" id="ticketPrice"> <button onclick="ok()">OK</button></p>
+<h2 id="ticketPrice2"></h2>
+<script>
+function ok(){
+let ticketPrice3 = document.querySelector('#ticketPrice').value;
+console.log('ticketPrice3', ticketPrice3)
+let lbw = "PKR";
+let ticketPrice4 = 600 * ticketPrice3 + lbw;
+console.log('ticketPrice4', ticketPrice4)
+
+// document.write('Your total cost of buying tickets is')
+
+let ticketPrice5 = document.querySelector('#ticketPrice2');
+ticketPrice5.innerHTML = ticketPrice4
+
+
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
