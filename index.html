@@ -196,16 +196,254 @@ console.log('ticketPrice4', ticketPrice4)
 
 let ticketPrice5 = document.querySelector('#ticketPrice2');
 ticketPrice5.innerHTML = ticketPrice4
+}</script>
 
+<!-- <h1>if and else</h1>
+<input type="number" id="nafees">
+<button onclick="check()">check</button>
+<h2 id="ifelse1"></h2>
+<script>
+function check(){
+let ifelse2 = document.querySelector('#nafees').value;
+console.log('ifelse2', ifelse2)
+// let result = 0;
+if(ifelse2<2000)
+{ result = 'you are under limit';}
+else
+{result = 'you are out of limit';}
+console.log('result', result)
 
-
+let ifelse1 = document.querySelector('#ifelse1');
+ifelse1.innerHTML = result;
 
 }
+</script> -->
+<h1>TABLE</h1>
+<p>Please enter which Number of table you want</p>
+<input type="number" id="table">
+<button onclick="table1()">Enter</button>
+<h2 id="table1"></h2>
+<script>
+    function table1(){
+let table = document.querySelector('#table').value;
+console.log('table', table)
 
+let table2 = 1;
+console.log('table2', table2)
+
+document.write('<table>')
+for(table2=1;table2<=10;table2++)
+
+    document.write("<tr><td>" + table + " x " + table2 + " = " + table2*table + "</td></tr>");
+    // console.log('table3', table3)
+
+let table4 = document.querySelector('#table1');
+table4.innerHTML = 
+document.write('</table>')
+    }
+</script>
+<h1>Tempurature Converter</h1>
+<p>Put Value In Fahrenhiet</p>
+<input type="number" id="cels">
+<button  onclick="Celsius()"> convert into Celsius Scale</button>
+<h2 id="cels2"></h2>
+
+<script>
+    function Celsius() {
+let cels3 = document.querySelector('#cels').value;
+        console.log('cels3', cels3)
+        
+let cels6 = ('Tempurature in celsius is '); 
+console.log('cels6', cels6)
+let cels4 = cels6 + (cels3 - 32) * 5 / 9;        
+console.log('cels4', cels4)        
+        
+ let cels5 = document.querySelector('#cels2');       
+  cels5.innerHTML = cels4              
+}    
+    
+</script>
+<p>Put value is Celsius</p>
+<input type="number" id="fah" >
+<button onclick="fahren()">convert into Fahrenhiet Scale</button>
+<h2 id="fah1"></h2>
+<script>
+function fahren(){ 
+let fah2 = document.querySelector('#fah').value;
+console.log('fah2', fah2)    
+    
+ let fah3 = 'Tempuratur in fahrenhiet is ';   
+ console.log('fah3', fah3)   
+    
+ let fah4 = fah3 + (fah2*9/5)+32;   
+ console.log('fah4', fah4)   
+    
+ let fah5 = document.querySelector('#fah1');  
+ fah5.innerHTML = fah4      
+}
+</script>
+<h1>SHOPPING CART</h1>
+Note That: Shipping Charges are 100pkr
+<p>Price of item1 </p>
+<input type="number" id="cart">
+<p>Quantity of item 1</p>
+<input type="number" id="cart2">
+<p>price of item2</p>
+<input type="number" id="cart3">
+<p>Quantity of item2</p>
+<input type="number" id="cart4"><br>
+<button onclick="shopping()">Total</button>
+<h2 id="cart7"></h2>
+<script>
+function shopping() {
+let cart = document.querySelector('#cart').value;
+console.log('cart', cart)    
+    
+ let cart2 = document.querySelector('#cart2').value;   
+ console.log('cart2', cart2)   
+    
+ let cart3 = document.querySelector('#cart3').value;   
+ console.log('cart3', cart3)   
+    
+ let cart4 = document.querySelector('#cart4').value;   
+ console.log('cart4', cart4)   
+    
+ let cart5 = 'Total Cost of Shopping is ';   
+console.log('cart5', cart5)
+    
+let cart6 = cart * cart2;
+console.log('cart6', cart6)    
+let cart8 = cart3 * cart4;
+console.log('cart8', cart8)
+let cart9 = cart6 + cart8;
+console.log('cart9', cart9)
+let cart10 = cart9 + 100 ;
+console.log('cart10', cart10)
+let cart11 = cart5 + cart10;
+console.log('cart11', cart11)
+let cart7 = document.querySelector('#cart7');
+cart7.innerHTML = cart11    
+}</script>
+
+<h1>Mark Sheet</h1>
+<p>Please Enter Your Marks</p>
+<input type="number" id="marks">
+*Note that: Total Marks is 980.* <br>
+<button onclick="per()">Convert into Percentage</button>
+<h2 id="marks1"></h2>
+<script>
+    function per(){
+let marks = document.querySelector('#marks').value;
+console.log('marks', marks)        
+        
+let marks2 = marks * 100 / 980;
+console.log('marks2', marks2)        
+ 
+let marks3 = "your percentage is " + marks2;
+console.log('marks3', marks3)        
+
+ let marks1 = document.querySelector('#marks1');       
+  marks1.innerHTML = marks3      
+  
+  
+  
+}
 </script>
 
+<script>
 
+    let own = 5 * 10 / 2;
+console.log('own', own)        
 
+</script>
+<h1>Currency Converter</h1>
+<p>Enter your Dollar Amount</p>
+<input type="number" name="" id="cash">
+<p>Enter your Riyal Amount</p>
+<input type="number" id="cash1">
+<button onclick="caas()">Convert into PKR</button>
+<h2 id="cash2"></h2>
+<script>
+    function caas(){
+let cash = document.querySelector('#cash').value;
+ console.log('cash', cash)       
+        
+let cash1 = document.querySelector('#cash1').value;        
+ console.log('cash1', cash1)       
+ 
+ let cash4 =  "Total Currency in PKR: ";
+console.log('cash4', cash4)
+let cash3 =cash*104.80+cash1*28;
+console.log('cash3', cash3)
+
+let cash5 = cash4 + cash3; 
+console.log('cash5', cash5)
+let cash2 = document.querySelector('#cash2');
+cash2.innerHTML=cash5   
+}</script>
+<h1>Age Calculator</h1>
+<p>Current year:</p>
+<input type="number" name="" id="age">
+<p>Birth year:</p>
+<input type="number" id="age1"> <br>
+<button onclick="ago()">Calculate Age</button>
+<h2 id="age2"></h2>
+<script>
+function ago(){
+let age = document.querySelector('#age').value;
+console.log('age', age)
+let age1 = document.querySelector('#age1').value;    
+console.log('age1', age)    
+ let age3 = age - age1;   
+ console.log('age3', age3)   
+  let age4 = "your Age is: " + age3;  
+  console.log('age4', age4)  
+  let age5 = document.querySelector('#age2');  
+   age5.innerHTML = age4 
+}
+</script>
+<h1>Circumference of Circle</h1>
+<p>Enter Value of Radius</p>
+<input type="number" name="" id="cir"> <br>
+<button onclick="circ()">Calculate Circumference</button>
+<h2 id="cir2"></h2>
+<script>
+    function circ(){
+let cir = document.querySelector('#cir').value;
+console.log('cir', cir)
+
+let cir3 = 2*3.142*cir;
+console.log('cir3', cir3)
+let cir5 = "The Circumference of Circle is: " + cir3;
+console.log('cir5', cir5)
+let cir4 = document.querySelector('#cir2');
+cir4.innerHTML = cir5
+    }
+</script>
+<h1>Lifetime Supply</h1>
+<p>Current Age:</p>
+<input type="number" name="" id="life">
+<p>Snacks per Day:</p>
+<input type="number" name="" id="life1"><br>
+<button onclick="lifo()">Calculate Life</button>
+<h2 id="life2"></h2>
+<script>
+    function lifo(){
+let life = document.querySelector('#life').value;
+console.log('life', life)
+let life1 = document.querySelector('#life1').value;
+console.log('life1', life1)
+let life3 = 65 - life; 
+console.log('life3', life3)
+let life5 =life3 * life1;
+console.log('life5', life5)
+ 
+let life6 =  "You will need " + life5 + " Chocolates to last your life"; 
+console.log('life6', life6)
+let life2 = document.querySelector('#life2');
+life2.innerHTML = life6
+    }
+</script>
 
 
 
